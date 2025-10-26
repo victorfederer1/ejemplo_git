@@ -17,6 +17,7 @@ function getUser(id: number): User | undefined{
     if (id === user.id) {
         return user;
     }
+        console.log('User with ID ${id} not found.');
     return undefined;   
 }
 
