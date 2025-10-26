@@ -12,5 +12,11 @@ const user: User = {
     email: 'alice@example.com'
 }
 
-
+function getUser(id: number): User | undefined{
+    console.log(`Fetching user with id: ${id}`);
+    if (id === user.id) {
+        return user;
+    }
+    return undefined;   
+}
 
